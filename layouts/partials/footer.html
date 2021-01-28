@@ -1,6 +1,3 @@
-{{ if or .Params.comment .Site.Params.comment }}
-{{ partial "comment.html" . }}
-{{ end }}
 <footer>
   {{ partial "foot_custom.html" . }}
   {{ with .Site.Params.footer }}

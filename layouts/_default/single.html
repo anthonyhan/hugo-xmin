@@ -8,5 +8,8 @@
 <main>
 {{ .Content }}
 </main>
+{{ if or .Params.comment .Site.Params.comment }}
+{{ partial "comment.html" . }}
+{{ end }}
 
 {{ partial "footer.html" . }}
